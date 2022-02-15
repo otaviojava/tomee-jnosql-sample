@@ -19,6 +19,7 @@
         <junit.version>5.6.0</junit.version>
         <http.port>8080</http.port>
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
+        <jnosql.version>1.0.0-b3</jnosql.version>
     </properties>
 
     <build>
@@ -57,6 +58,16 @@
             <version>${version.microprofile}</version>
             <type>pom</type>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jnosql.mapping</groupId>
+            <artifactId>mapping-document</artifactId>
+            <version>${jnosql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jnosql.communication</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>1.0.0-b3</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
