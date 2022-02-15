@@ -21,6 +21,18 @@ mvn clean package tomee:exec
 
 ![MongoDB Project](http://www.jnosql.org/img/logos/mongodb.png)
 
+## Execute
+
+```shell 
+curl --location --request POST 'http://localhost:8080/fishes' \
+--header 'Content-Type: application/json' \
+--header 'Content-Type: application/javascript' \
+--data-raw '{"name": "tomee"}'
+```
+
+```shell
+curl --location --request GET 'http://localhost:8080/animals'
+```
 
 ## References
 
