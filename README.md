@@ -7,7 +7,7 @@ Apache TomEE is the Eclipse MicroProfile  implementation that uses several Apach
 
 ## how to execute
 ```shell
-mvn -Dhttp.port=8080 clean package tomee:exec
+mvn clean package tomee:exec
 ```
 
 ## References
