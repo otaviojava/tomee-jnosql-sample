@@ -41,6 +41,9 @@
                 <configuration>
                     <tomeeClassifier>microprofile</tomeeClassifier>
                     <tomeeHttpPort>${http.port}</tomeeHttpPort>
+                    <systemVariables>
+                        <openejb.additional.include>org.eclipse.,jakarta.</openejb.additional.include>
+                    </systemVariables>
                 </configuration>
             </plugin>
             <plugin>
