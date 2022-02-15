@@ -1,4 +1,4 @@
-package sh.platform.template;
+package org.soujava;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

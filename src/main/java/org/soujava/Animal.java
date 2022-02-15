@@ -1,4 +1,4 @@
-package sh.platform.template;
+package org.soujava;
 
 import jakarta.nosql.mapping.Column;
 import jakarta.nosql.mapping.Convert;

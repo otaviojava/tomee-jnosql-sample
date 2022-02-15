@@ -1,4 +1,4 @@
-package sh.platform.template;
+package org.soujava;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

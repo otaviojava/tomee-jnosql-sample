@@ -1,4 +1,4 @@
-package sh.platform.template;
+package org.soujava;
 
 import jakarta.nosql.mapping.AttributeConverter;
 import org.bson.types.ObjectId;

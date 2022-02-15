@@ -1,4 +1,4 @@
-package sh.platform.template;
+package org.soujava;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
