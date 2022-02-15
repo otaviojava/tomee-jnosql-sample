@@ -6,9 +6,17 @@ This project provides a starter kit for Apache TomEE Eclipse MicroProfile projec
 Apache TomEE is the Eclipse MicroProfile  implementation that uses several Apache Project flavors such as Apache Tomcat, Apache OpenWebBeans and so on.
 
 ## how to execute
+To compile:
 ```shell
 mvn clean package tomee:exec
 ```
+
+To start: 
+
+```shell
+java -jar target/ROOT-exec.jar
+```
+
 ## Using Docker
 
 ![Docker](https://www.docker.com/sites/default/files/horizontal_large.png)
