@@ -8,7 +8,7 @@ import jakarta.nosql.mapping.Id;
 import java.util.Objects;
 
 @Entity
-public class Fish {
+public class Animal {
 
     @Id
     @Convert(ObjectIdConverter.class)
@@ -41,7 +41,7 @@ public class Fish {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Fish fish = (Fish) o;
+        Animal fish = (Animal) o;
         return Objects.equals(id, fish.id);
     }
 

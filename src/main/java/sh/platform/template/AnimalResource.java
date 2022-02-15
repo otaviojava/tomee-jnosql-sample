@@ -14,22 +14,22 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("fishes")
+@Path("animals")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class FishResource {
+public class AnimalResource {
 
     @Inject
-    private FishRepository repository;
+    private AnimalRepository repository;
 
     @POST
-    public void create(Fish entity) {
+    public void create(Animal entity) {
         repository.save(entity);
     }
 
     @PUT
     @Path("{id}")
-    public void edit(@PathParam("id") String id, Fish entity) {
+    public void edit(@PathParam("id") String id, Animal entity) {
         repository.save(entity);
     }
 
@@ -41,14 +41,14 @@ public class FishResource {
 
     @GET
     @Path("{id}")
-    public Fish find(@PathParam("id") String id) {
+    public Animal find(@PathParam("id") String id) {
         return repository.findById(id)
                 .orElseThrow(() ->
                         new WebApplicationException(Response.Status.NOT_FOUND));
     }
 
     @GET
-    public List<Fish> findAll() {
+    public List<Animal> findAll() {
         return repository.findAll();
     }
 
