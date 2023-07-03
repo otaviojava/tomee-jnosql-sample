@@ -19,7 +19,6 @@ java -jar target/ROOT-exec.jar
 
 ## Using Docker
 
-![Docker](https://www.docker.com/sites/default/files/horizontal_large.png)
 
 1. Install docker: https://www.docker.com/
 1. https://store.docker.com/images/mongo
