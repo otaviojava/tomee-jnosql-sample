@@ -1,11 +1,11 @@
 package org.soujava;
 
-import jakarta.nosql.mapping.Repository;
+import jakarta.data.repository.PageableRepository;
+import jakarta.data.repository.Repository;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.List;
 
-@ApplicationScoped
-public interface AnimalRepository extends Repository<Animal, String> {
-    List<Animal> findAll();
+@Repository
+public interface AnimalRepository extends PageableRepository<Animal, String> {
 }
