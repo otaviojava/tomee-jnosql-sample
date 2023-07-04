@@ -14,12 +14,12 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.microprofile>2.2</version.microprofile>
-        <tomee.version>8.0.9</tomee.version>
-        <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
+        <tomee.version>9.1.0</tomee.version>
+        <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
         <junit.version>5.6.0</junit.version>
         <http.port>8080</http.port>
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
-        <jnosql.version>1.0.0-b3</jnosql.version>
+        <jnosql.version>1.0.0</jnosql.version>
     </properties>
 
     <build>
@@ -63,14 +63,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.jnosql.mapping</groupId>
-            <artifactId>mapping-document</artifactId>
-            <version>${jnosql.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jnosql.communication</groupId>
-            <artifactId>mongodb-driver</artifactId>
-            <version>1.0.0-b3</version>
+            <groupId>org.eclipse.jnosql.databases</groupId>
+            <artifactId>jnosql-mongodb</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
