@@ -51,7 +51,7 @@ public class AnimalResource {
 
     @GET
     public List<Animal> findAll() {
-        return repository.findAll();
+        return repository.findAll().toList();
     }
 
 }
