@@ -31,7 +31,7 @@ java -jar target/ROOT-exec.jar
 ## Execute
 
 ```shell 
-curl --location --request POST 'http://localhost:8080/fishes' \
+curl --location --request POST 'http://localhost:8080/animals' \
 --header 'Content-Type: application/json' \
 --header 'Content-Type: application/javascript' \
 --data-raw '{"name": "tomee"}'
